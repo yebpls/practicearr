@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let string = prompt("Nhap vao chuoi: ")
+      let result = []
+      for (let index in string) {
+        if (string[index] == string[index].toLowerCase()) {
+          result.push(string[index].toUpperCase())
+        } else if (string[index] == string[index].toUpperCase()) {
+          result.push(string[index].toLowerCase())
+        } else {
+          result.push(string[index])
+        }
+      }
+      document.write(result.join(""))
+    </script>
+  </body>
+</html>
